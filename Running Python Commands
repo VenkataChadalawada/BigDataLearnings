@@ -1,0 +1,5 @@
+To Run a file with data file named u.date inside dataDir folder in which even the program lies:
+!python RatingCounter.py dataDir/u.data
+
+TO bring the data into another file:
+!python FriendsByAge.py fakefriends.csv > friendsavgresult.txt
