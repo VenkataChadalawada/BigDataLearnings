@@ -1,3 +1,6 @@
+Installing a package
+!pip install mrjob
+
 To Run a file with data file named u.date inside dataDir folder in which even the program lies:
 !python RatingCounter.py dataDir/u.data
 
@@ -7,3 +10,7 @@ TO bring the data into another file:
 Mapper function signatures
  1) def mapper(self,key,line):
  2) def mapper(self, _, line):
+ 
+ Chaining:
+ Take key values from reducer and then feed that as input to another mapper
+ Note : map reduce will sort values automatically for us, So all we need to do is 
