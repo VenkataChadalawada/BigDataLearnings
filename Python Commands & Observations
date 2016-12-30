@@ -3,3 +3,7 @@ To Run a file with data file named u.date inside dataDir folder in which even th
 
 TO bring the data into another file:
 !python FriendsByAge.py fakefriends.csv > friendsavgresult.txt
+
+Mapper function signatures
+ 1) def mapper(self,key,line):
+ 2) def mapper(self, _, line):
