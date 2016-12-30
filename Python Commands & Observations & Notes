@@ -1,16 +1,28 @@
 Installing a package
 !pip install mrjob
 
+
 To Run a file with data file named u.date inside dataDir folder in which even the program lies:
 !python RatingCounter.py dataDir/u.data
 
+
 TO bring the data into another file:
 !python FriendsByAge.py fakefriends.csv > friendsavgresult.txt
+
 
 Mapper function signatures
  1) def mapper(self,key,line):
  2) def mapper(self, _, line):
  
- Chaining:
+ 
+Chaining:
  Take key values from reducer and then feed that as input to another mapper
  Note : map reduce will sort values automatically for us, So all we need to do is 
+
+
+When you do chaing map reduces with map1 red1 map2 red 2 in cluster environment Output might nnot be sorted expecially in sorting problems
+To solve that
+   1. Use only 1 reducer like map1 to map2 to red 
+   or
+   2.Sort again after the reducer 2's result
+   
