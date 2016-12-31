@@ -6,7 +6,7 @@ class MostPopNiceMovie(MRJob):
     def configure_options(self):
         super(MostPopNiceMovie,self).configure_options()
         self.add_file_option('--items',help='path to movie names')
-        
+        #reducer_init runs before reducer and that loads up, here we are using to load up a dictionary
     def steps(self):
         return[
          MRStep(mapper=self.mapper1,reducer_init=self.reducer_init,reducer=self.reducer1),
