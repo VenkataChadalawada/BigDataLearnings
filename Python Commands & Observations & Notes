@@ -26,3 +26,16 @@ To solve that
    or
    2.Sort again after the reducer 2's result
    
+
+Ancillary Files:
+Sometimes the end result of one data set is not quite the result for ex: topmoviecode:1234 We need to further look in some other ancillary 
+data set to understand what does 1234 means?
+
+Declaring a dictionary and loading with key value pairs:
+self.movienames = {}
+        with open("movies.csv") as f:
+            for line in f:
+                fields = line.split('|')
+                self.movienames[fields[0]]=fields[1].decode('utf-8','ignore')
+                
+ a
