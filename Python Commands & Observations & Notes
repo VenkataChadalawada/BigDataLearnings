@@ -38,4 +38,5 @@ self.movienames = {}
                 fields = line.split('|')
                 self.movienames[fields[0]]=fields[1].decode('utf-8','ignore')
                 
- a
+ Decoding utf8
+ func.decode('utf-8','ignore')
