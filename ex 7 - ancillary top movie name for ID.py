@@ -35,3 +35,8 @@ class MostPopNiceMovie(MRJob):
         
 if __name__ == '__main__':
     MostPopNiceMovie.run()
+
+TO RUN:
+    need to pass --items locaton and then input file
+    !python TopMovieRatingAncillary.py --items=ml-20m/movies.csv ml-20m/ratings.csv > Anstop.txt
+    
