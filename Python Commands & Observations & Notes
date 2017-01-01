@@ -38,5 +38,17 @@ self.movienames = {}
                 fields = line.split('|')
                 self.movienames[fields[0]]=fields[1].decode('utf-8','ignore')
                 
- Decoding utf8
+Decoding utf8
  func.decode('utf-8','ignore')
+ 
+configure options is a class function
+ It helps to onfly pass a file or text to program which needs this auxillary file or text apart from input text
+
+        def configure_options(self):
+               super(MostPopularSuperHero, self).configure_options()
+               self.add_file_option('--names', help='Path to Marvel-names.txt')
+
+        def configure_options(self):
+               super(MRBFSIteration,self).configure_options()
+               self.add_passthrough_option('__target',help = ' ID of charecter we need to search for')
+
